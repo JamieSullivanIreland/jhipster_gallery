@@ -42,6 +42,11 @@ public class CacheConfiguration {
             createCache(cm, com.jsullivan.gallery.domain.User.class.getName());
             createCache(cm, com.jsullivan.gallery.domain.Authority.class.getName());
             createCache(cm, com.jsullivan.gallery.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.jsullivan.gallery.domain.Album.class.getName());
+            createCache(cm, com.jsullivan.gallery.domain.Photo.class.getName());
+            createCache(cm, com.jsullivan.gallery.domain.Photo.class.getName() + ".tags");
+            createCache(cm, com.jsullivan.gallery.domain.Tag.class.getName());
+            createCache(cm, com.jsullivan.gallery.domain.Tag.class.getName() + ".photos");
             // jhipster-needle-ehcache-add-entry
         };
     }
